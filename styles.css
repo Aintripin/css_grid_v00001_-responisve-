@@ -7,6 +7,7 @@
   -ms-grid-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
       grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
       grid-template-areas: "nav nav nav nav" "sidebar main main main" "sidebar content1 content2 content3" "sidebar footer footer footer";
+  grid-gap: 0.2rem;
 }
 
 nav {
@@ -60,5 +61,14 @@ footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: footer;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

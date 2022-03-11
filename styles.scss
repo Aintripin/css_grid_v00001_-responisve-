@@ -7,7 +7,8 @@
         "nav nav nav nav"
         "sidebar main main main"
         "sidebar content1 content2 content3"
-        "sidebar footer footer footer"
+        "sidebar footer footer footer";
+    grid-gap: 0.2rem;           // equals to "grid-column-gap" and "grid-row-gap"
 }
 
 nav {
@@ -44,4 +45,12 @@ main {
 footer {
     background: #1de9b6;
     grid-area: footer;
+}
+
+
+@media screen and (max-width:550px){
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    }
 }
