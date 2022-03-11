@@ -1,3 +1,6 @@
+$main_radius: 5px;
+$main_padding: 5px;
+
 .container {
     display: grid;
     height: 100vh;
@@ -9,42 +12,61 @@
         "sidebar content1 content2 content3"
         "sidebar footer footer footer";
     grid-gap: 0.2rem;           // equals to "grid-column-gap" and "grid-row-gap"
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
 }
 
 nav {
     background: #a7ffeb;
     grid-area: nav;
+    border-radius: $main_radius;
+    padding-top: $main_padding;
 }
 
 main {
     background: #84ffff;
     grid-area: main;
-
+    border-radius: $main_radius;
+    padding-top: $main_padding;
 }
 
 #sidebar {
     background: #18ffff;
     grid-area: sidebar;
+    border-radius: $main_radius;
+    padding-top: $main_padding;
 }
 
 #content1 {
     background: #6fffd2;
     grid-area: content1;
+    border-radius: $main_radius;
+    padding-top: $main_padding;
 }
 
 #content2 {
     background: #64ffda;
     grid-area: content2;
+    border-radius: $main_radius;
+    padding-top: $main_padding;
 }
 
 #content3 {
     background: #73ffba;
     grid-area: content3;
+    border-radius: $main_radius;
+    padding-top: $main_padding;
 }
 
 footer {
     background: #1de9b6;
     grid-area: footer;
+    border-radius: $main_radius;
+    padding-top: $main_padding;
 }
 
 

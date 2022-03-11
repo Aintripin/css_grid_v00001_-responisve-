@@ -8,6 +8,12 @@
       grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
       grid-template-areas: "nav nav nav nav" "sidebar main main main" "sidebar content1 content2 content3" "sidebar footer footer footer";
   grid-gap: 0.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
 }
 
 nav {
@@ -16,6 +22,8 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: nav;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 main {
@@ -24,6 +32,8 @@ main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: main;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 #sidebar {
@@ -32,6 +42,8 @@ main {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: sidebar;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 #content1 {
@@ -39,6 +51,8 @@ main {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: content1;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 #content2 {
@@ -46,6 +60,8 @@ main {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: content2;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 #content3 {
@@ -53,6 +69,8 @@ main {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
   grid-area: content3;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 footer {
@@ -61,6 +79,8 @@ footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: footer;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 550px) {
